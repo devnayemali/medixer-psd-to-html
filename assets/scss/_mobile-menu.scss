@@ -1,0 +1,131 @@
+/*----------------------------------------*/
+/*  04. Mobile Menu CSS
+/*----------------------------------------*/
+/* Sidebar Menu CSS Start here  */
+.header-bar {
+	background: $white;
+	height: 60px;
+	width: 60px;
+	@include border-radius(50%);
+	text-align: center;
+	line-height: 1;
+	padding-top: 19px;
+	padding-left: 15px;
+	cursor: pointer;
+	margin-left: 50px;
+    span {
+        width: 30px;
+        height: 4px;
+        background: $theme-gradient;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+}
+
+
+
+.sidebar-close-btn {
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+    button i {
+        color: $span-2;
+    }
+}
+
+
+.mobile-sidebar-inner {
+	position: fixed;
+	right: -370px;
+	top: 0;
+	padding: 30px;
+	width: 350px;
+	height: 100%;
+	background: $theme-gradient;
+	overflow-y: scroll;
+	-webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+}
+
+#mobile-menu-active {
+	margin-top: 15px;
+}
+
+.sidebar-menu{
+    li{
+        display: block;
+        a {
+            padding: 13px 0;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 500;
+            text-transform: uppercase;
+            position: relative;
+        }
+        &.has-dropdown > a::after {
+            position: absolute;
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-width: 2px 0 0 2px;
+            border-style: solid;
+            border-color: initial;
+            right: 16px;
+            top: 50%;
+            -webkit-transform: rotate(-45deg) translateY(-50%);
+            transform: rotate(-45deg) translateY(-50%);
+            -webkit-transform-origin: top;
+            transform-origin: top;
+            transition: all 0.3s ease-out;
+        }
+        &.has-dropdown a[aria-expanded="true"]::after {
+            -webkit-transform: rotate(-135deg) translateY(-50%);
+            transform: rotate(-135deg) translateY(-50%);
+        }
+        a[aria-expanded="true"] {
+            color: #ffffff;
+        }
+    }
+}
+
+.sidebar-close-btn button {
+	border: none;
+	background: none;
+	color: #ec6e39;
+	font-size: 23px;
+}
+.mobile-sidebar.info-opened {
+	visibility: visible;
+	opacity: 1;
+}
+.mobile-sidebar.info-opened .mobile-sidebar-inner {
+	right: -20px;
+}
+
+
+.body-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.body-overlay.opened {
+	opacity: 1;
+	visibility: visible;
+}

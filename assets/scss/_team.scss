@@ -1,0 +1,66 @@
+/*----------------------------------------*/
+/*  09. Team CSS
+/*----------------------------------------*/
+
+.team-area{
+    background: $depart-bg-2;
+}
+
+.team__mem-item{
+    padding: 32px;
+    @include transition();
+    &:hover{
+        background: $white;
+        .m-btn{
+            background: $theme-gradient-red;
+            color: $white;
+        }
+    }
+    .team__mem-info{
+        margin-right: 35px;
+    }
+}
+
+.team__mem-img{
+    width: 120px;
+    height: 120px;
+    .team_mem-icon{
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        background: $white;
+        margin: auto;
+        @include border-radius(50%);
+        @include box-shadow($d-box-shadow);
+    }
+}
+
+.team__mem-title {
+    h6 {
+        line-height: 1;
+        margin-bottom: 3px;
+    }
+}
+
+
+.team__mem-content {
+	margin-top: -5px;
+    .team__mem-btn{
+        i{
+            background: $theme-gradient-red;
+            color: $white;
+            width: 60px;
+            height: 60px;
+            @include border-radius(50%);
+            line-height: 60px;
+            text-align: center;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+    }
+    
+}

@@ -1,0 +1,24 @@
+/*----------------------------------------*/
+/*  05. Slider CSS
+/*----------------------------------------*/
+.slider{
+    @include background();
+}
+.slider-height{
+    height: 915px;
+}
+.slider__content{
+    margin-right: 10px;
+    p{
+        font-size: 24px;
+        line-height: 1.4;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+}
+.slider__content-btn{
+    a{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}

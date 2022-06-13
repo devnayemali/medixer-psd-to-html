@@ -1,0 +1,74 @@
+/*----------------------------------------*/
+/*  01. Variables CSS
+/*----------------------------------------*/
+
+// Font Family
+$body-font: 'Roboto', sans-serif;
+$heading-font: 'Rajdhani', sans-serif;
+$rajdhani: 'Rajdhani', sans-serif;
+
+
+// Colors ---------------
+$white: #ffffff;
+$black: #222;
+$grey:#f9f9f9;
+
+$body-text-color: #899399;
+$hr-border-color:#eceff8;
+$grey-color:#eef0ff;
+
+$dark : #121121;
+$link : #7f7d9f;
+$s-gray: #8d8db4;
+$white-light:#e8e8e8;
+$transparent-color: transparent;
+
+
+
+
+$para: #003242;
+$theme-color: #0c94c6;
+$span:#34b4b7;
+$span-2: #0c94c6;
+$theme-gradient: linear-gradient( 90deg, rgb(77,189,211) 0%, rgb(0,140,196) 100%);
+$theme-gradient-red: linear-gradient( 90deg, rgba(252, 24, 83, 1) 0%, rgba(252, 86, 83, 1) 100% );
+$d-box-shadow: 0px 16px 32px 0px rgba(4, 142, 197, 0.04);
+$menu-border: #777780;
+$gray-border: #dff3fa;
+$input-border-color: #e6f1f2;
+$input-placeholder-color: #86859b;
+$red-color: #fb4f52;
+$depart-bg-2: #f6feff;
+$green: #4e13c4;
+$light-sky: #01e0fb;
+$dark-gray: #cff0f4;
+$light-gray: #eefbfd;
+
+// Heading Color
+$heading-color: #003242;
+
+// Soft color
+$black-soft:#7e7e7e;
+
+
+// Responsive Variables
+$laptop: '(max-width: 1600px)'; 
+
+// Min Width min - 1400px
+$xxl: '(max-width: 1600px)'; 
+
+// min-width: 1200px
+$xl: '(max-width: 1399px)';
+
+// min-width: 992px
+$lg : '(max-width: 1200px)';
+
+// min-width: 768px
+$md: '(max-width: 991px)';
+
+// min-width: 576px
+$sm: '(max-width: 767px)';
+
+$xs:'(max-width: 575px)';
+$xxs: '(max-width: 425px)';
+$custom_xs: '(max-width: 320px)';

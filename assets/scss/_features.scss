@@ -1,0 +1,71 @@
+/*----------------------------------------*/
+/*  10. Features CSS
+/*----------------------------------------*/
+.core-bottom-border{
+    border-bottom: 1px solid $gray-border;
+    padding-bottom: 30px;
+}
+
+.core__feature-area{
+    padding-top: 55px;
+    .owl-nav{
+        div{
+            position: absolute;
+            top: 50%;
+            left: -50px;
+            @include transform(translateX(-50%));
+            background: $theme-gradient;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: $white;
+            @include border-radius(50%);
+            @include transition();
+            &:hover{
+                background: $theme-gradient-red;
+            }
+        }
+        div.owl-next{
+            right: -100px;
+            left: auto;
+        }
+    }
+    
+}
+.core__feature-item{
+    padding: 60px 40px;
+    border: 1px solid $gray-border;
+    &:hover{
+        background: $theme-gradient-red;
+        h3, p{
+            color: $white;
+        }
+        .core__bar {
+            span{
+                background: $white;
+            }
+        }
+    }
+    .core__feature-icon {
+        width: 85px;
+        height: 85px;
+        margin: auto;
+    }
+}
+
+.core__feature-content{
+    .core__bar{
+        padding-bottom: 20px;
+        span {
+            width: 14px;
+            height: 2px;
+            background: $theme-gradient;
+            display: inline-block;
+        }
+    }
+    p{
+        margin-bottom: 0px;
+    }
+    
+}

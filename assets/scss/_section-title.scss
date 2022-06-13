@@ -1,0 +1,19 @@
+/*----------------------------------------*/
+/*  06. Section Title CSS
+/*----------------------------------------*/
+.section__area{
+    .section_area-title{
+        position: relative;
+        display: inline-block;
+        padding: 0 15px;
+        margin-bottom: 15px;
+        @include before-left-top(4px, 20px, $span, 0px, 40%);
+        @include after-right-top(4px, 20px, $span, 0px, 40%);
+    }
+}
+.section-area-2 {
+    h2{
+        margin: 12px 0;
+    }
+	
+}

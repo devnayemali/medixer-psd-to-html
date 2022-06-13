@@ -1,0 +1,25 @@
+/*----------------------------------------*/
+/*  08. Appointment CSS
+/*----------------------------------------*/
+.appointment-area{
+    background: $depart-bg-2;
+}
+.appointment-box {
+    background: $white;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+.appointment-content {
+    h2{
+        font-size: 55px;
+    }
+}
+.appointment-btn-area{
+    .appointment-btn{
+        margin-right: 55px;
+        margin-top: -20px;
+    }
+    .appointment-img {
+        margin-right: -48px;
+    }
+}

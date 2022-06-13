@@ -1,0 +1,153 @@
+/*----------------------------------------*/
+/*  15. Responsive CSS
+/*----------------------------------------*/
+
+@media #{$xxl} {
+    
+}
+@media #{$xl} {
+    .container{
+        max-width: 1100px;
+    }
+    .appointment-content h2 {
+        font-size: 50px;
+    }
+    .core__feature-area .owl-nav div {
+        left: -33px;
+    }
+    .core__feature-area .owl-nav div.owl-next {
+        right: -80px;
+    }
+    .footer__widget-content .footer_widget-social-icon li {
+        margin-right: 0px;
+    }
+    
+}
+
+@media #{$lg} {
+    .menu-area ul li a {
+        padding: 30px 6px;
+    }
+    .section-area-2 h2 br{
+        display: none;
+    }
+    .about__author-info .author-content h5 {
+        margin-bottom: 0px;
+        font-size: 22px;
+    }
+    .appointment-content h2 {
+        font-size: 45px;
+    }
+    .appointment-btn-area .appointment-btn {
+        margin-right: 40px;
+        margin-top: -4px;
+    }
+    .team__mem-btn.red-icon.mt-30 a {
+        padding: 15px 30px;
+    }
+    .team__mem-content .team__mem-btn i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .core__feature-area .owl-nav div {
+        top: 0%;
+        left: 56px;
+    }
+    .core__feature-area .owl-nav div.owl-next {
+        right: 10px;
+    }
+    .footer__widget-content .footer_widget-social-icon li {
+        margin-right: 0px;
+    }
+    .footer__widget-content .footer_widget-social-icon li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+}
+
+@media #{$md} {
+    .header__info {
+        display: none !important;
+    }
+    .slider__content h1 {
+        font-size: 40px;
+    }
+    .section-area-2 h2 br {
+        display: none;
+    }
+    
+}
+@media #{$sm} {
+    .contact__form {
+        padding: 15px;
+    }
+    .appointment-box {
+        padding-left: 34px;
+    }
+}
+
+@media #{$xs} {
+    h2{
+        font-size: 40px;
+    }
+    .section__area .section_area-title::before, .section__area .section_area-title::after {
+        display: none;
+    }
+    .contact-btn .nav-link {
+        padding: 13px 16px;
+        margin-bottom: 15px;
+    }
+    .about__content-list span {
+        font-size: 14px;
+        line-height: 1;
+    }
+    .m-btn {
+        padding: 20px 30px;
+        font-size: 15px;
+    }
+    
+    .team__mem-content{
+        .team__mem-btn{
+            a {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            i{
+                margin-left: 0px;
+            }
+        }
+    }
+    .about-content{
+        padding-left: 11px;
+    }
+    .about__content-list .about__content-item {
+        flex-basis: 97%;
+    }
+    .team__mem-item {
+        padding: 7px;
+    }
+    .team__mem-item .team__mem-info {
+        margin-right: 16px;
+    }
+    .team__mem-btn.red-icon.mt-30 a {
+        padding: 15px 20px;
+    }
+    .appointment-btn-area .appointment-img {
+        display: none;
+    }
+    .video-content h2 {
+        font-size: 29px;
+    }
+    .news__item-content {
+        padding: 35px 11px;
+    }
+    .appointment-btn-area .appointment-btn {
+        margin-top: 17px;
+    }
+}
+
+
+// others common css here :)

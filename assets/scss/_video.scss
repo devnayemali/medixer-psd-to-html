@@ -1,0 +1,43 @@
+/*----------------------------------------*/
+/*  12. Video CSS
+/*----------------------------------------*/
+.video-area{
+    @include background();
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: $theme-gradient-red;
+        top: 0;
+        left: 0;
+        opacity: 0.96;
+        z-index: -1;
+    }
+}
+.video-btn{
+    a{
+        background: transparent;
+        width: 110px;
+        height: 110px;
+        border: 4px solid $gray-border;
+        display: inline-block;
+        @include border-radius(50%);
+        line-height: 110px;
+        color: $white;
+        font-size: 30px;
+        text-align: center;
+        i{
+            color: $white;
+        }
+    }
+}
+.video-content{
+    h2,span{
+        color: $white;
+    }
+    h2{
+        margin-top: 20px;
+    }
+}

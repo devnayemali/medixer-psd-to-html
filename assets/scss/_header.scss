@@ -1,0 +1,88 @@
+/*----------------------------------------*/
+/*  04. Header CSS
+/*----------------------------------------*/
+.header{
+    padding: 30px 0;
+}
+.transparent-header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    display: block;
+    z-index: 100;
+}
+.header-size{
+    max-width: 1400px;
+}
+.menu-area{
+    ul{
+        li{
+            display: inline-block;
+            position: relative;
+            a{
+                display: block;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: capitalize;
+                padding: 30px 13px;
+                
+            }
+            &:hover > a{
+                color: $theme-color;
+            }
+            
+            .submenu{
+                position: absolute;
+                top: 100%;
+                left: 0%;
+                background: $white;
+                min-width: 250px;
+                text-align: start;
+                padding: 20px;
+                @include box-shadow ((0 0 10px 3px rgba(0, 0, 0, 0.05)));
+                border-top: 4px solid $theme-color;
+                visibility: hidden;
+                opacity: 0;
+                top: 115%;
+                li{
+                    display: block;
+                    a{
+                        padding: 10px 0px;
+
+                    }
+                    &:hover a{
+                        padding: 10px 10px;
+                    }
+                }
+            }
+            
+            &:hover .submenu{
+                opacity: 1;
+                visibility: visible;
+                top: 100%;
+            }
+            
+
+        }
+    }
+}
+.header__info{
+    // .header__info-icon{
+
+    // }
+    .header__info-content{
+        margin-left: 12px;
+        span{
+            font-size: 14px;
+            color: $span-2;
+        }
+        a{
+            display: block;
+            color: $heading-color;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}

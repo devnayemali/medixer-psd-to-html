@@ -1,0 +1,318 @@
+/*----------------------------------------*/
+/*  03. Common CSS
+/*----------------------------------------*/
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&family=Roboto:wght@400;700;900&display=swap');
+body, html{
+	scroll-behavior: smooth;
+}
+ body {
+	font-family: $body-font;
+	font-weight: 400;
+    font-style: normal;
+	color:$para;
+	font-size: 16px;
+}
+.img,img {
+	max-width: 100%;
+	@include transition(.3s);
+}
+.img-100 img{
+	width: 100%;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.text-right{
+	text-align: right;
+}
+.fix {
+	overflow: hidden
+}
+a, .f-btn, button, span, p, input, select, textarea, li, img, ::after, ::before, .transition-3, h1, h2, h3, h4, h5, h6{
+	@include transition(.3s);
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus
+{
+	text-decoration: none;
+}
+a:hover
+{
+	color: $theme-color;
+}
+a,
+button {
+	color: inherit;
+	outline: medium none;
+	text-decoration: none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-font;
+	color: $heading-color;
+	margin-top: 0px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 1.1;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 80px;
+	line-height: 1;
+}
+h2 {
+	font-size: 60px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 26px;
+}
+h5 {
+	font-size: 24px;
+}
+h6 {
+	font-size: 18px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+span{
+	font-weight: 700;
+	text-transform: capitalize;
+	color: $span;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: $para;
+	margin-bottom: 15px;
+}
+input,select{
+	transition: .3s;
+}
+label {
+	color: $black-soft;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: $black;
+	color: $white;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: $black;
+	color:$white;
+	text-shadow: none;
+}
+::selection {
+	background: $black;
+	color: $white;
+	text-shadow: none;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+*::-moz-placeholder {
+	color: $input-placeholder-color;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: $input-placeholder-color;
+	font-size: 14px;
+	opacity: 1;
+}
+
+
+/*--
+    - Common Classes
+-----------------------------------------*/
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+.sticky {
+	left: 0;
+	margin: auto;
+	position: fixed !important;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+	z-index: 999;
+	-webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+	animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+	-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+	background: $light-sky;
+	padding: 10px 0 !important;
+	color: $dark;
+}
+
+/*--
+    - Background color
+-----------------------------------------*/
+.grey-bg {
+	background: $grey;
+}
+.white-bg {
+	background:$white;
+}
+.black-bg {
+	background: $dark;
+}
+.theme-bg {
+	background: $theme-color;
+}
+.white-light-bg{
+	background: $white-light;
+}
+.s-gray-bg{
+	background: $s-gray;
+}
+.slight-bg{
+	background: #f9f8ff;
+}
+.span-bg{
+	background: $span;
+}
+.red-bg{
+	background: $red-color;
+}
+.green-bg{
+	background: $green;
+}
+.light-sky-bg{
+	background: $light-sky;
+}
+.dark-gray-bg{
+	background: $dark-gray;
+}
+.light-gray{
+	background: $light-gray;
+}
+/*--
+    - color
+-----------------------------------------*/
+.white-color {
+	color: $white;
+}
+.black-color {
+	color: $black;
+}
+.theme-color {
+	color: $theme-color;
+}
+
+// All Button CSS
+.m-btn {
+	background: $theme-gradient;
+	color: $white;
+	font-weight: 700;
+	display: inline-block;
+	padding: 20px 42px;
+	line-height: 1;
+	font-size: 17px;
+	text-transform: capitalize;
+	border-radius: 50px;
+	letter-spacing: 0px;
+    &:hover{
+        background: $theme-gradient-red;
+        color: $white;
+    }
+}
+.m-white-btn{
+	background:$white;
+	color: $heading-color;
+	border: 1px solid $gray-border;
+}
+.m-red-btn{
+	background: $theme-gradient-red;
+	&:hover{
+		background: $theme-gradient;
+	}
+}
+.f-lg-btn{
+	padding: 20px 60px;
+	font-size: 14px;
+}
+.f-xl-btn{
+	padding: 22px 100px;
+}
+.f-t-btn{
+	background-color: $transparent-color;
+	border: 2px solid $white-light;
+}
+
+
+// Overlay CSS 
+
+
+
+// Animation CSS Start Here 
+@keyframes updown {
+	0% {
+	  transform: translateY(10px);
+	}
+	100% {
+	  transform: translateY(-10px);
+	}
+  }
+
+// others common css here :)
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+	max-width: 1180px;
+}

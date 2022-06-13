@@ -1,0 +1,90 @@
+/*----------------------------------------*/
+/*  13. News CSS
+/*----------------------------------------*/
+.news-area{
+    background: $depart-bg-2;
+}
+.news__item{
+    .news__item-date{
+        top: -45px;
+        right: 24px;
+        width: 80px;
+        height: 80px;
+        background: $theme-gradient;
+        text-align: center;
+        border-radius: 50%;
+        font-family: $rajdhani;
+        font-weight: 700;
+        color: $white;
+        @include box-shadow($d-box-shadow);
+
+        span {
+            font-size: 40px;
+            text-align: center;
+            display: block;
+            display: block;
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 15px;
+            margin-bottom: -8px;
+            line-height: 1;
+            color: $white;
+        }
+    }
+    &:hover{
+        .news__item-date{
+            background: $theme-gradient-red;
+            color: $white;
+        }
+        .news__item-content{
+            h4{
+                color: $theme-color;
+            }
+        }
+        .news__item-img img{
+            @include transform(scale(1.1));
+        }
+        .news__item-btn{
+            &::after{
+                background: $theme-color;
+            }
+        }
+    }
+}
+
+.news__item-meta{
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        a{
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            i{
+                margin-right: 6px;
+                color: $span;
+            }
+        }
+      }
+}
+
+.news__item-content {
+	padding: 40px 35px;
+    background: $white;
+
+    .news__item-btn{
+        padding-bottom: 10px;
+        a{
+            font-weight: 700;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background: $grey-color;
+            width: 84px;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
